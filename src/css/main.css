@@ -48,6 +48,13 @@ main {
   columns: #888888;
 }
 
+#landing__image {
+  flex: 0 1 60vw;
+  height: 50vh;
+  margin: 0;
+  background: url(https://source.unsplash.com/De8wMYoSSBc) no-repeat center/cover;
+}
+
 .btn {
   display: inline-block; /* evita que el botón se estire y se pegue al elemento de arriba */
   margin-top: 2rem;
