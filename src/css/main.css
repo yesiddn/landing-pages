@@ -1,16 +1,18 @@
 body {
+  margin: 0;
   font-family: sans-serif;
   background-color: #7fffd4;
 }
 
 .images-container {
   display: flex;
-  margin: auto;
+  margin: 50px auto;
   flex-direction: column;
   align-items: center;
 }
 
 .images-container__image {
+  position: relative;
   margin: 15px;
   text-align: center;
 }
@@ -25,14 +27,60 @@ body {
 
 /* Trablet screens */
 @media (min-width: 768px) {
+  .images-container {
+    width: 90vw;
+    height: 80vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
   .images-container__image img {
     width: 250px;
   }
-
-  .images-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .images-container__image div {
+    position: absolute;
+    display: none;
+    width: 150px;
+    top: -80px;
+    left: calc(50% - 75px);
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: #FFFFFF;
+  }
+
+  .images-container__image:hover div {
+    display: inline-block;
+  }
+
+  .images-container__image div::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: calc(50% - 10px);
+    bottom: -20px;
+    border-top: #000000 10px solid;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  .images-container__image img {
+    width: 200px;
+  }
+
+  .images-container__image h3 {
+    /* text-overflow sirve para que no se salga el texto del div */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
