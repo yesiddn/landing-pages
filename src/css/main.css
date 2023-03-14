@@ -22,3 +22,17 @@ body {
 .images-container__image h3 {
   font-size: 1.3rem;
 }
+
+/* Trablet screens */
+@media (min-width: 768px) {
+  .images-container__image img {
+    width: 250px;
+  }
+
+  .images-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
