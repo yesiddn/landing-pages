@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="./src/img/charizard.png" type="image/x-icon">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./src/css/main.css">
+  <title>Pokemon card</title>
 </head>
+
 <body>
-  
+  <main>
+    <article class="card">
+      <div class="card__header"></div>
+
+      <div class="card__body">
+        <div class="card__body__img-container">
+          <img src="./src/img/charizard.png" alt="Pokemon Charizard">
+        </div>
+
+        <div class="card__body__info">
+          <h2 class="card__body__info__name">Charizard <span>#26</span></h2>
+          <p class="card__body__info__type">Fire</p>
+        </div>
+      </div>
+
+      <div class="card__footer">
+        <div class="card__footer__specifications">
+          <h3>Power</h3>
+          <img src="./src/img/fuego.png" alt="Fire">
+        </div>
+
+        <div class="card__footer__specifications">
+          <h3>Endurance</h3>
+          <img src="./src/img/castillo.png" alt="Castle">
+        </div>
+        
+        <div class="card__footer__specifications">
+          <h3>Bonus</h3>
+          <img src="./src/img/cofre.png" alt="Chest">
+        </div>
+      </div>
+    </article>
+  </main>
 </body>
+
 </html>
