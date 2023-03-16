@@ -18,5 +18,40 @@ main {
   display: flex;
   height: 100vh;
   justify-content: center;
+  /* align-items: center; */
+}
+
+.card {
+  width: 320px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.card__header {
+  width: 100%;
+  height: 130px;
+  background-image: url(../svg/fondoencabezado.svg);
+  background-repeat: no-repeat;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.card__body__img-container {
+  position: relative;
+  top: -60px;
+  padding: 10px;
+  border: 5px solid #F67C55;
+  border-radius: 50%;
+  background-color: #FCD3C6;
+}
+
+.card__body__img-container img {
+  width: 150px;
 }
