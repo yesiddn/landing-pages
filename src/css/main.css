@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #F8B78B;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  background-image: url(../svg/fondoTop.svg), url(../svg/fondoBottom.svg);
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position: right 70vw top -20vh, left 70vw bottom -20vh;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
