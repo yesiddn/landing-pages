@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/background.jpeg) no-repeat center top;
+  background-size: cover;
+}
