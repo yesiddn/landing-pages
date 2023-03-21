@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.menu li:hover {
+  width: 180px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.menu li:hover::after {
+  opacity: 0.6;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  transition: 0.5s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0;
+}
+
+.menu li:hover .menu__icon {
+  transform: scale(0);
+  transition-delay: 0.25s;
+}
+
+.menu li:hover .menu__title {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+
+.menu__title {
+  transform: scale(0);
+  transition: .5s;
+  transition-delay: 0s;
+}
+
+.menu__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: scale(1);
+  transition: .5s;
+  transition-delay: .25s;
+}
+
+#home {
+  background: url(../svg/home.svg) no-repeat center / cover;
+}
+
+#chat {
+  background: url(../svg/chat.svg) no-repeat center / cover;
+}
+
+#heart {
+  background: url(../svg/heart.svg) no-repeat center / cover;
+}
+
+#video-camera {
+  background: url(../svg/video-camera.svg) no-repeat center / cover;
+}
+
+#camera {
+  background: url(../svg/camera.svg) no-repeat center / cover;
+}
