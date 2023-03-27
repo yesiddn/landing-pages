@@ -18,7 +18,7 @@ body {
   display: flex;
   width: 100%;
   top: 0;
-  padding: 20px 50px;
+  padding: 30px 50px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -102,12 +102,11 @@ main {
 .banner {
   position: relative;
   display: flex;
-  flex-direction: column;
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .banner__bg {
@@ -167,6 +166,55 @@ main {
   border-radius: 2px;
   font-style: normal;
   color: #FFFFFF;
+}
+
+/* banner description */
+.banner__content p {
+  margin: 10px 0 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+/* banner buttons */
+.banner__content__buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 6px 20px;
+  background-color: #DE0611;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.banner__content__buttons a:nth-child(2) {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.banner__content__buttons a:hover:nth-child(2) {
+  background-color: #DE0611;
+  color: #FFFFFF;
+}
+
+.banner__play {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banner__play img {
+  max-width: 50px;
+  margin-right: 10px;
 }
 
 /* media queries */
