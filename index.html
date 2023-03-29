@@ -55,7 +55,13 @@
         </div>
       </div>
 
-      <a href="#" class="banner__play"><img src="./src/img/play.png" alt="Play">Watch trailer</a>
+      <a class="banner__play" onclick="togleVideo()"><img src="./src/img/play.png" alt="Play">Watch trailer</a>
+    </section>
+
+    <section class="trailer">
+      <video src="./src/video/trailer.mp4" controls></video>
+
+      <img src="./src/img/close.png" class="trailer__close" onclick="togleVideo()">
     </section>
   </main>
 </body>
