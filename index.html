@@ -64,6 +64,13 @@
       <img src="./src/img/close.png" class="trailer__close" onclick="togleVideo()">
     </section>
   </main>
+
+  <script>
+    function togleVideo() {
+      const trailer = document.querySelector('.trailer');
+      trailer.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
