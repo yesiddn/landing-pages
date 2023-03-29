@@ -217,6 +217,43 @@ main {
   margin-right: 10px;
 }
 
+/* trailer */
+.active {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.trailer {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(20px);
+  z-index: 200;
+}
+
+.trailer video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.trailer__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
 /* media queries */
 @media (min-width: 600px) {
   .banner {
