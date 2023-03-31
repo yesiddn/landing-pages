@@ -41,3 +41,22 @@ main::after {
   background: linear-gradient(#2196f3, #31ff38);
   transform: translate(250px, 150px);
 }
+
+/* list box */
+.box {
+  width: 350px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+  z-index: 10;
+}
+
+.box h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
