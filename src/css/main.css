@@ -60,3 +60,60 @@ main::after {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
+/* characters */
+.box__character {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+.box__character:hover {
+  background-color: #FFFFFF;
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  color: #000000;
+  transform: scale(1.15) translateX(30px) translateY(-15px);
+  z-index: 100;
+}
+
+.box__character__img img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.box__character__conten h2 {
+  position: absolute;
+  right: -50px;
+  font-size: 2rem;
+  color: #03A9F4;
+  transition: ease-in-out 0.5s;
+}
+
+.box__character__conten h2 span {
+  font-size: 1.7rem;
+  font-weight: 500;
+  opacity: 0.25;
+}
+
+.box__character:hover h2{
+  right: 20px;
+}
+
+.box__character__conten h3 {
+  font-size: 1rem;
+}
+
+.box__character__conten p {
+  font-size: 0.8rem;
+}
