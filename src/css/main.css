@@ -8,6 +8,8 @@
   --white: #FFFFFF;
   --black-nightly: #2C2C3C;
   --purple: #9123FF;
+  --gray-nightly: #EDEDF2;
+  --gray: #8A8AAA;
 }
 
 html {
@@ -73,6 +75,83 @@ header {
   color: var(--white);
 }
 
+/* home title section */
+.home__title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.home__title>img {
+  width: 100%;
+  height: 100%;
+}
+
+.home__title__lang {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  left: 2rem;
+  width: 64px;
+  gap: 0.5rem;
+  padding: 1rem 0.25rem 0.25rem;
+  border-radius: 1234px;
+  background-color: var(--gray-nightly);
+}
+
+.home__title__lang__line {
+  width: 2px;
+  height: 15px;
+  background-color: var(--gray);
+}
+
+.home__title__lang__icon {
+  padding: 1.5rem 1rem;
+  border-radius: 1234px;
+  background-color: var(--white);
+}
+
+.home__title__lang__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home__title__social {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 1rem;
+  margin: 2rem 0 0 auto;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.home__title__social a {
+  display: inline-block;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home__title__social #social--x {
+  background-image: url('../svg/x.svg');
+}
+
+.home__title__social #social--telegram {
+  background-image: url('../svg/telegram.svg');
+}
+
+.home__title__social #social--discord {
+  background-image: url('../img/discord.png');
+}
+
 @media (min-width: 375px) {
   header {
     position: absolute;
@@ -99,6 +178,17 @@ header {
   .header__navbar {
     margin-left: 3rem;
   }
+
+  /* home title section */
+  .home__title>img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .home__title__social {
+    margin-left: 30%;
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 525px) {
@@ -106,5 +196,20 @@ header {
   /* home */
   .home__hero a {
     bottom: 15%;
+  }
+
+  /* home title section */
+  .home__title>img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .home__title__lang {
+    margin-left: 5%;
+  }
+
+  .home__title__social {
+    margin-left: 25%;
+    padding-right: 20%;
   }
 }
