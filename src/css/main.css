@@ -344,6 +344,31 @@ header {
   background: url('../svg/x-page.svg') no-repeat center/100% 100%;
 }
 
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--black-nightly);
+  border-radius: 1rem 1rem 0 0;
+  color: var(--white);
+}
+
+footer p {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--green-font);
+}
+
 @media (min-width: 375px) {
   header {
     position: absolute;
