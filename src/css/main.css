@@ -328,6 +328,22 @@ header {
   background-position: center;
 }
 
+/* details footer */
+.details__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 375px;
+  margin: 2.5rem auto;
+}
+
+.details__footer span {
+  width: 72px;
+  height: 68px;
+  background: url('../svg/x-page.svg') no-repeat center/100% 100%;
+}
+
 @media (min-width: 375px) {
   header {
     position: absolute;
@@ -368,9 +384,15 @@ header {
   .details__body__card--discount {
     font-size: 1.5rem;
   }
-  
+
   .details__body__card--discount p:last-child {
     font-size: 3.5rem;
+  }
+
+  /* details footer */
+  .details__footer {
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
