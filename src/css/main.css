@@ -534,6 +534,10 @@ footer a {
     margin-top: 1rem;
   }
 
+  .details__body .details__body__cards-container {
+    flex-direction: column-reverse;
+  }
+
   /* footer */
   footer {
     border-radius: 1.5rem;
