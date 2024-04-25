@@ -1,0 +1,20 @@
+:root {
+  --purple-0: #FACCFF;
+  --purple-1: #DCB0FF;
+  --purple-2: #BE93FD;
+  --purple-3: #A178DF;
+  --purple-4: #845EC2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 50vw;
+  height: 50vw;
+  background-color: var(--purple-0);
+}
