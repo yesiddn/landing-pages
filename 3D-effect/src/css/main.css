@@ -6,6 +6,10 @@
   --purple-4: #845EC2;
 }
 
+* {
+  transform-style: preserve-3d; /* necesario para que los elementos puedan moverse en todos los ejes (x, y, z) */
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -17,4 +21,22 @@ body {
   width: 50vw;
   height: 50vw;
   background-color: var(--purple-0);
+
+  transform: rotateX(60deg) rotateZ(45deg);
+}
+
+.bottom {
+  width: 30vw;
+  height: 20vw;
+  background-color: var(--purple-1);
+
+  transform: translateY(30vw);
+}
+
+.top {
+  width: 30vw;
+  height: 20vw;
+  background-color: var(--purple-2);
+
+  transform: translateY(10vw) translateZ(5vw); /* container height - (bottom height + top height) */
 }
