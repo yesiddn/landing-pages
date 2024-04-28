@@ -40,3 +40,19 @@ body {
 
   transform: translateY(10vw) translateZ(5vw); /* container height - (bottom height + top height) */
 }
+
+.left {
+  width: 30vw;
+  height: 5vw;
+  background: var(--purple-3);
+  transform-origin: bottom left; /* necesario para que la rotación se haga en el punto de origen -> https: //developer.mozilla.org/docs/Web/CSS/transform-origin */
+  transform: rotateX(-90deg) translateZ(5vw); /* container height - (bottom height + top height + left height) */
+}
+
+.front {
+  width: 20vw;
+  height: 5vw;
+  background: var(--purple-4);
+  transform-origin: bottom left;
+  transform: rotateX(-90deg) rotateY(90deg) translateZ(30vw);
+}
